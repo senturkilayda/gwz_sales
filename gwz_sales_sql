@@ -1,10 +1,9 @@
--- Günlük ciro + satın alma maliyeti - course14.gwz_sales
-
 SELECT
   date_date AS day,
-  SUM(turnover) AS daily_turnover,
-  SUM(purchase_cost) AS daily_purchase_cost,
-  SUM(turnover) - SUM(purchase_cost) AS daily_gross_margin
+  ROUND(SUM(turnover), 2) AS daily_turnover,
+  ROUND(SUM(purchase_cost), 2) AS daily_purchase_cost,
+  ROUND(SUM(turnover) - SUM(purchase_cost), 2) AS daily_gross_margin
 FROM `data-analytics-469406.course14.gwz_sales`
 GROUP BY day
 ORDER BY day;
+

@@ -5,5 +5,6 @@ SELECT
   ROUND(SUM(turnover) - SUM(purchase_cost), 2) AS daily_gross_margin
 FROM `data-analytics-469406.course14.gwz_sales`
 GROUP BY day
-ORDER BY day;
+ORDER BY day DESC;
+
 

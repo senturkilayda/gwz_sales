@@ -1,3 +1,6 @@
+
+
+
 SELECT
   date_date AS day,
   ROUND(SUM(turnover), 2) AS daily_turnover,
@@ -8,3 +11,5 @@ GROUP BY day
 ORDER BY day DESC;
 
 
+--toprak
+--v3
